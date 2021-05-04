@@ -25,13 +25,6 @@ public class AppiumIntro {
 
         URL appiumServerURL = new URL("http://localhost:4723/wd/hub");
 
-       /* AndroidDriver <AndroidElement> driver = new AndroidDriver(appiumServerURL,desiredCapabilities);
-        AndroidElement accessibilityLink =  driver.findElement(By.xpath("//android.widget.TextView[@text=‘Accessibility’]"));
-        String accessibilityLinkText = accessibilityLink.getText();
-        System.out.println(accessibilityLinkText);
-        accessibilityLink.click();
-        */
-
         AndroidDriver <AndroidElement>driver=new AndroidDriver(appiumServerURL, desiredCapabilities);
         AndroidElement accecibilityLink=
                 driver.findElement(By.xpath("//android.widget.TextView[@text='Accessibility']"));
